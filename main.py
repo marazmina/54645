@@ -29,7 +29,7 @@ def get_text_messages(message):
      if message.text == "Привет":
            bot.send_message(message.from_user.id, "Привет, сейчас я расскажу тебе гороскоп на сегодня."+zodiacWelcomeString)
      elif message.text == "/help":
-      bot.send_message(message.from_user.id, "Напиши Привет")
+      bot.send_message(message.from_user.id, "Напиши Привет программистам")
      elif  message.text in zodicIntList:
       sendText= random.choice(first)+random.choice(second)+ random.choice(second_add)+random.choice(third)
       bot.send_message(message.from_user.id, sendText)
